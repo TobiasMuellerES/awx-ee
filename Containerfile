@@ -93,6 +93,6 @@ RUN mkdir -p /var/run/receptor
 ADD run.sh /run.sh
 CMD /run.sh
 USER 1000
-RUN ls -la /home && ls -la /home/runner
+RUN id && ls -la /home && ls -la /home/runner
 RUN git lfs install
 LABEL ansible-execution-environment=true
